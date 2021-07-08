@@ -25,4 +25,4 @@ vamos replicar a solução criada em nosso ambiente de desenvolvimento Dataholds
 
 # Solução proposta
 
-![solution-diagram](Dataholds-challende solution.png)
+![solution-diagram](images/Dataholds-challenge solution.png)
