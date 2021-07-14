@@ -38,7 +38,7 @@ def create_tables(ds, **kwargs):
     create_tables(conn)
 
 
-def copy_csv_to_db(ds, **kwargs):
+def copy_products_csv_to_db(ds, **kwargs):
     CopyCsvToPostgres(pg_params, csv_name="product_dataset", db_table_name="products").execute()
     CopyCsvToPostgres(pg_params, csv_name="category_dataset", db_table_name="categories").execute()
 
