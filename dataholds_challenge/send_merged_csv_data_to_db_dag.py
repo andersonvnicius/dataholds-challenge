@@ -5,15 +5,10 @@ from airflow.operators.python_operator import PythonOperator
 from psycopg2 import connect
 from datetime import datetime, timedelta
 
-# from dags.dataholds_challenge.lib import sql_create_tables, sql_send_datasets, sql_merge
+from dataholds_challenge.lib.sql_create_tables import create_tables
+from dataholds_challenge.lib.sql_merge import InsertMergedDataToTable
+from dataholds_challenge.lib.sql_send_datasets import CopyCsvToPostgres
 
-from dags.dataholds_challenge.lib.sql_create_tables import create_tables
-from dags.dataholds_challenge.lib.sql_merge import InsertMergedDataToTable
-from dags.dataholds_challenge.lib.sql_send_datasets import CopyCsvToPostgres
-
-# from lib/sql_create_tables import create_tables
-# from lib/sql_send_datasets import CopyCsvToPostgres
-# from lib/sql_merge import InsertMergedDataToTable
 
 default_args = {
     "owner": "Anderson",
