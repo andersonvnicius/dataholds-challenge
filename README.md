@@ -22,7 +22,3 @@ Python 3.8
 ### Forma de avaliação 
 vamos replicar a solução criada em nosso ambiente de desenvolvimento Dataholds. 
 
-
-# Solução proposta
-
-![solution-diagram](images/Dataholds-challenge solution.png)
