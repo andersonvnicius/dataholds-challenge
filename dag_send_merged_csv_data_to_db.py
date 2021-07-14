@@ -54,7 +54,7 @@ create_tables_task = PythonOperator(
     task_id="create_tables_task",
     provide_context=True,
     depends_on_past=False,
-    python_callable=copy_csv_to_db,
+    python_callable=create_tables,
     dag=dag,
 )
 
@@ -70,7 +70,7 @@ insert_data_to_merged_table_task = PythonOperator(
     task_id="insert_data_to_merged_table_task",
     provide_context=True,
     depends_on_past=False,
-    python_callable=copy_csv_to_db,
+    python_callable=insert_data_to_merged_table,
     dag=dag,
 )
 
